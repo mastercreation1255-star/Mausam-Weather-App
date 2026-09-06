@@ -1,0 +1,261 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="preferences-page">
+
+    <section class="preferences-header">
+        <div class="container">
+
+            <span class="preferences-label">
+                PERSONALIZATION
+            </span>
+
+            <h1>Personalize Your Weather</h1>
+
+            <p>
+                Select your preferences to receive weather information
+                tailored to your daily needs.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="preferences-section">
+
+        <div class="container">
+
+            <form action="/preferences" method="POST">
+
+                <div class="preferences-card">
+
+                    <div class="preferences-card-header">
+
+                        <div class="preferences-icon">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+
+                        <div>
+                            <h2>Choose Your Weather Preference</h2>
+
+                            <p>
+                                Select the option that best describes your
+                                weather information needs.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="preference-grid">
+
+                        <label class="preference-option">
+
+                            <input type="radio"
+                                   name="userType"
+                                   value="health"
+                                   required>
+
+                            <div class="preference-content">
+
+                                <div class="preference-option-icon">
+                                    <i class="fa-solid fa-heart-pulse"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Health</h3>
+                                    <p>
+                                        Air quality, UV index, humidity
+                                        and health-related conditions.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </label>
+
+                        <label class="preference-option">
+
+                            <input type="radio"
+                                   name="userType"
+                                   value="fitness">
+
+                            <div class="preference-content">
+
+                                <div class="preference-option-icon">
+                                    <i class="fa-solid fa-person-running"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Fitness</h3>
+                                    <p>
+                                        Running conditions, wind, heat
+                                        and outdoor activity insights.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </label>
+
+                        <label class="preference-option">
+
+                            <input type="radio"
+                                   name="userType"
+                                   value="beach">
+
+                            <div class="preference-content">
+
+                                <div class="preference-option-icon">
+                                    <i class="fa-solid fa-umbrella-beach"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Beach</h3>
+                                    <p>
+                                        Weather and conditions for
+                                        beach and water activities.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </label>
+
+                        <label class="preference-option">
+
+                            <input type="radio"
+                                   name="userType"
+                                   value="traveler">
+
+                            <div class="preference-content">
+
+                                <div class="preference-option-icon">
+                                    <i class="fa-solid fa-plane"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Traveler</h3>
+                                    <p>
+                                        Travel weather, alerts and
+                                        destination-related insights.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </label>
+
+                        <label class="preference-option">
+
+                            <input type="radio"
+                                   name="userType"
+                                   value="family">
+
+                            <div class="preference-content">
+
+                                <div class="preference-option-icon">
+                                    <i class="fa-solid fa-people-group"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Family</h3>
+                                    <p>
+                                        Family activities, commuting
+                                        and outdoor weather alerts.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </label>
+
+                        <label class="preference-option">
+
+                            <input type="radio"
+                                   name="userType"
+                                   value="agriculture">
+
+                            <div class="preference-content">
+
+                                <div class="preference-option-icon">
+                                    <i class="fa-solid fa-wheat-awn"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Agriculture</h3>
+                                    <p>
+                                        Rainfall, humidity, temperature
+                                        and farming-related conditions.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </label>
+
+                        <label class="preference-option">
+
+                            <input type="radio"
+                                   name="userType"
+                                   value="commuter">
+
+                            <div class="preference-content">
+
+                                <div class="preference-option-icon">
+                                    <i class="fa-solid fa-car"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Commuter</h3>
+                                    <p>
+                                        Commute conditions, rain alerts
+                                        and travel weather information.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </label>
+
+                        <label class="preference-option">
+
+                            <input type="radio"
+                                   name="userType"
+                                   value="event">
+
+                            <div class="preference-content">
+
+                                <div class="preference-option-icon">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Event</h3>
+                                    <p>
+                                        Weather conditions and planning
+                                        insights for outdoor events.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </label>
+
+                    </div>
+
+                    <div class="preferences-action">
+
+                        <button type="submit" class="save-preferences-btn">
+                            <i class="fa-solid fa-check"></i>
+                            Save Preferences
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</div>

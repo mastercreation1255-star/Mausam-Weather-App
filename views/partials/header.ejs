@@ -1,0 +1,88 @@
+<!-- main header -->
+<header class="main-header">
+
+    <div class="main-header-inner">
+
+        <!-- GOVERNMENT LOGO -->
+
+        <div class="government-brand">
+
+            <img src="/images/mausam-header-logos.png" alt="Ministry of Earth Sciences and IMD" class="government-logo">
+
+        </div>
+
+
+        <!-- SEARCH BAR -->
+
+        <div class="header-search">
+
+            <input type="text" id="headerCitySearch" placeholder="Search city...">
+
+            <button type="button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+
+        <!-- LOGIN -->
+
+        <% if (isLoggedIn) { %>
+
+            <a href="/logout" class="login-button">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                LOGOUT
+            </a>
+
+            <% } else { %>
+
+                <a href="/login" class="login-button">
+                    <i class="fa-solid fa-user"></i>
+                    LOGIN
+                </a>
+
+                <% } %>
+
+    </div>
+
+</header>
+<!-- Navigation -->
+<nav class="main-navigation">
+
+    <div class="navigation-inner">
+
+        <ul class="navigation-list">
+
+            <li>
+                <a href="/dashboard">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#current-weather">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                    Weather
+                </a>
+            </li>
+
+            <li>
+                <a href="#forecast">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Forecast
+                </a>
+            </li>
+
+            <li>
+                <a href="/preferences">
+                    <i class="fa-solid fa-sliders"></i>
+                    Personalize
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
