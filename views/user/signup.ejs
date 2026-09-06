@@ -1,117 +1,115 @@
 <% layout("/layouts/boilerplate") %>
 
-<div class="auth-page">
+    <div class="auth-page">
 
-    <div class="auth-container">
+        <div class="auth-container">
 
-        <div class="auth-card signup-card">
+            <div class="auth-card signup-card">
 
-            <div class="auth-header">
+                <div class="auth-header">
 
-                <div class="auth-icon">
-                    <i class="fa-solid fa-user-plus"></i>
+                    <div class="auth-icon">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+
+                    <span class="auth-label">MAUSAM ACCOUNT</span>
+
+                    <h1>Create Account</h1>
+
+                    <p>
+                        Create your account to receive personalized weather information.
+                    </p>
+
                 </div>
 
-                <span class="auth-label">MAUSAM ACCOUNT</span>
+                <form action="/signup" method="POST">
 
-                <h1>Create Account</h1>
+                    <div class="form-group">
 
-                <p>
-                    Create your account to receive personalized weather information.
-                </p>
+                        <label for="name">
+                            Full Name
+                        </label>
 
-            </div>
+                        <div class="input-wrapper">
 
-            <form action="/signup" method="POST">
+                            <i class="fa-solid fa-user"></i>
 
-                <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
-                    <label for="name">
-                        Full Name
-                    </label>
-
-                    <div class="input-wrapper">
-
-                        <i class="fa-solid fa-user"></i>
-
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Enter your full name"
-                            required
-                        >
+                        </div>
 
                     </div>
 
-                </div>
+                    <div class="form-group">
 
-                <div class="form-group">
+                        <label for="email">
+                            Email Address
+                        </label>
 
-                    <label for="email">
-                        Email Address
-                    </label>
+                        <div class="input-wrapper">
 
-                    <div class="input-wrapper">
+                            <i class="fa-solid fa-envelope"></i>
 
-                        <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
 
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Enter your email address"
-                            required
-                        >
+                        </div>
 
                     </div>
 
-                </div>
+                    <div class="form-group">
 
-                <div class="form-group">
+                        <label for="password">
+                            Password
+                        </label>
 
-                    <label for="password">
-                        Password
-                    </label>
+                        <div class="input-wrapper">
 
-                    <div class="input-wrapper">
+                            <i class="fa-solid fa-lock"></i>
 
-                        <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="Create a password"
+                                required minlength="6">
 
-                        <input
-                            type="password"
-                            id="password"
-                            name="password"
-                            placeholder="Create a password"
-                            required
-                            minlength="6"
-                        >
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input type="password" id="confirmPassword" name="confirmPassword"
+                                placeholder="Confirm your password" required minlength="6">
+
+                        </div>
 
                     </div>
 
+                    <button type="submit" class="auth-submit">
+
+                        <i class="fa-solid fa-user-plus"></i>
+
+                        CREATE ACCOUNT
+
+                    </button>
+
+                </form>
+
+                <div class="auth-footer">
+
+                    <p>
+                        Already have an account?
+                        <a href="/login">Login</a>
+                    </p>
+
                 </div>
-
-                <button type="submit" class="auth-submit">
-
-                    <i class="fa-solid fa-user-plus"></i>
-
-                    CREATE ACCOUNT
-
-                </button>
-
-            </form>
-
-            <div class="auth-footer">
-
-                <p>
-                    Already have an account?
-                    <a href="/login">Login</a>
-                </p>
 
             </div>
 
         </div>
 
     </div>
-
-</div>

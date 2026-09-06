@@ -8,6 +8,14 @@ async function loadDashboard(city) {
 
         const data = await response.json();
 
+        console.log("HTTP Status:", response.status);
+        console.log("Dashboard Response:", data);
+
+        if (!response.ok || !data.success) {
+            alert(data.message || data.error || "Unable to load weather");
+            return;
+        }
+
         if (!data.success) {
             console.log(data.message);
             return;
@@ -138,7 +146,9 @@ async function loadDashboard(city) {
 
 
         /* PERSONALIZED DATA */
-
+        console.log("Logged in user:", data.user);
+        console.log("User Type:", data.user?.userType);
+        console.log("Personalized Data:", data.personalizedData);
         const personalized =
             data.personalizedData;
 
