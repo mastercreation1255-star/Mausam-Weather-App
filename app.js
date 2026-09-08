@@ -1,6 +1,6 @@
 require("dotenv").config();
-const dns = require("dns");
-dns.setServers(["8.8.8.8", "8.8.4.4"]);
+// const dns = require("dns");
+// dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 const express = require("express");
 const flash = require("connect-flash");
@@ -120,6 +120,6 @@ app.get("/", (req, res) => {
 
 // ----------- Server -----------
 
-app.listen(PORT, () => {
+app.listen(PORT,  "0.0.0.0",() => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
